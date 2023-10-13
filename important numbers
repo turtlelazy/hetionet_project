@@ -1,0 +1,17 @@
+Create Nodes without batching: 691.6081697940826 seconds
+Create nodes with batching: 46.42984700202942 seconds
+Create Nodes: 106.61931824684143 seconds with print statements
+Creating with batches of 10k: 200 seconds each batch
+Create Relationships: 22131.927492141724 seconds
+
+1292211 total relationships -> 1292211 / 10000 = 129.2211 -> 129.2211 * 200 seconds = 7.17 hours
+
+neo4j takes 6.063240051269531 seconds to iterate through diseases and find relevant info 
+mongodb takes 1.167720079421997 seconds to iterate through diseases and find relevant info 
+
+
+Before Test/Demo:
+brew services start mongodb-community@7.0
+brew services stop mongodb-community@7.0
+
+run the HetioNet_ DB
